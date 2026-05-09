@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartKintai Cloud | 勤怠も経費精算も、これひとつ。中小企業向けクラウド勤怠・経費管理</title>
+  <meta name="description" content="SmartKintai Cloudは、スマホ1つで勤怠打刻と経費精算が完結するクラウドサービス。従業員30〜100名の中小企業に選ばれています。30日間無料トライアル実施中。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; }
+  </style>
+</head>
+<body class="text-gray-800 antialiased bg-white">
+
+  <!-- ============================================= -->
+  <!-- ヘッダー（スクロール追従） -->
+  <!-- ============================================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- ロゴ -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center space-x-2">
+            <div class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <span class="text-lg lg:text-xl font-bold text-gray-900">SmartKintai <span class="text-blue-600">Cloud</span></span>
+          </a>
+        </div>
+
+        <!-- グローバルナビ（PC） -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="#features" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">機能</a>
+          <a href="#pricing" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">料金</a>
+          <a href="#cases" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">導入事例</a>
+          <a href="#faq" class="text-sm font-medium text-gray-700 hover:text-blue-600 transition">FAQ</a>
+        </nav>
+
+        <!-- CTAボタン群 -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <a href="#" class="hidden sm:inline-flex items-center px-4 py-2 border border-blue-600 text-sm font-semibold text-blue-600 rounded-lg hover:bg-blue-50 transition">
+            資料ダウンロード
+          </a>
+          <a href="#cta-final" class="inline-flex items-center px-3 sm:px-5 py-2 bg-orange-500 text-sm font-bold text-white rounded-lg hover:bg-orange-600 shadow-md hover:shadow-lg transition">
+            無料で試す
+            <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- セクション①：ファーストビュー（ヒーロー） -->
+  <!-- ============================================= -->
+  <section class="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
+    <!-- 装飾的な背景円 -->
+    <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-blue-100 rounded-full opacity-40 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-orange-100 rounded-full opacity-30 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- 左：テキスト -->
+        <div class="order-2 lg:order-1">
+          <!-- 信頼バッジ -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="inline-flex items-center px-3 py-1 bg-white border border-blue-200 rounded-full text-xs font-semibold text-blue-700 shadow-sm">
+              🏆 導入1,200社突破
+            </span>
+            <span class="inline-flex items-center px-3 py-1 bg-white border border-blue-200 rounded-full text-xs font-semibold text-blue-700 shadow-sm">
+              ⭐ BtoB満足度No.1
+            </span>
+            <span class="inline-flex items-center px-3 py-1 bg-white border border-blue-200 rounded-full text-xs font-semibold text-blue-700 shadow-sm">
+              ✓ インボイス・電帳法対応
+            </span>
+          </div>
+
+          <!-- キャッチコピー -->
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 leading-tight mb-6">
+            勤怠も、経費精算も、<br>
+            <span class="text-blue-600">これひとつ。</span><br>
+            <span class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-gray-700">月末の集計、もう終わりに。</span>
+          </h1>
+
+          <!-- サブコピー -->
+          <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-8">
+            SmartKintai Cloudなら、スマホ・PC1つで勤怠打刻と経費精算が完結。<br class="hidden sm:inline">
+            従業員30〜100名規模の中小企業に選ばれているクラウドサービスです。
+          </p>
+
+          <!-- CTAボタン -->
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4">
+            <a href="#cta-final" class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-base lg:text-lg font-bold text-white rounded-lg hover:bg-orange-600 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition">
+              30日間 無料で試してみる
+              <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#" class="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-blue-600 text-base lg:text-lg font-bold text-blue-600 rounded-lg hover:bg-blue-50 transition">
+              📄 資料ダウンロード
+            </a>
+          </div>
+          <p class="text-xs lg:text-sm text-gray-500">
+            ✓ クレジットカード登録不要　／　✓ 1分で申込完了　／　✓ 自動課金なし
+          </p>
+        </div>
+
+        <!-- 右：メインビジュアル -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="relative">
+            <img src="./images/img-firstview-01.png" alt="SmartKintai Cloud アプリ画面" class="rounded-2xl shadow-2xl w-full">
+            <!-- フローティングカード -->
+            <div class="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white rounded-xl shadow-xl p-3 lg:p-4 border border-gray-100">
+              <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <span class="text-lg lg:text-xl">✓</span>
+                </div>
+                <div>
+                  <p class="text-xs text-gray-500">月末集計時間</p>
+                  <p class="text-sm lg:text-base font-bold text-gray-900">▲75%削減</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション②：お悩み共感セクション -->
+  <!-- ============================================= -->
+  <section class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">CHALLENGES</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight mb-4">
+          総務・人事のご担当者さま、<br class="sm:hidden">
+          こんなお悩みありませんか？
+        </h2>
+        <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+          中小企業の労務管理は、年々複雑になる一方。<br class="hidden sm:inline">
+          本来の業務に集中できていないと感じていませんか？
+        </p>
+      </div>
+
+      <!-- 悩みカード -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+
+        <!-- カード1 -->
+        <div class="bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+          <div class="text-4xl lg:text-5xl mb-4">📋</div>
+          <h3 class="text-base lg:text-lg font-bold text-gray-900 mb-3">
+            紙のタイムカードで<br>月末の集計に追われている
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            未だに紙やExcelで管理しており、月末になると残業が発生してしまう。
+          </p>
+        </div>
+
+        <!-- カード2 -->
+        <div class="bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+          <div class="text-4xl lg:text-5xl mb-4">🔀</div>
+          <h3 class="text-base lg:text-lg font-bold text-gray-900 mb-3">
+            勤怠と経費精算の<br>システムが別々で煩雑
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            複数システムの管理にコストがかかり、データ連携にも手間がかかっている。
+          </p>
+        </div>
+
+        <!-- カード3 -->
+        <div class="bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+          <div class="text-4xl lg:text-5xl mb-4">👴</div>
+          <h3 class="text-base lg:text-lg font-bold text-gray-900 mb-3">
+            ITに不慣れな従業員が<br>使いこなせるか不安
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            新システムを入れたいが、ベテラン社員がついてこられるか心配。
+          </p>
+        </div>
+
+        <!-- カード4 -->
+        <div class="bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-lg transition">
+          <div class="text-4xl lg:text-5xl mb-4">⚖️</div>
+          <h3 class="text-base lg:text-lg font-bold text-gray-900 mb-3">
+            頻繁な法改正への<br>対応が追いつかない
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            インボイス制度や電子帳簿保存法など、常に最新動向を追うのが大変。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション③：解決策の提示 -->
+  <!-- ============================================= -->
+  <section class="bg-white py-16 lg:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- ブリッジコピー -->
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center px-4 py-1.5 bg-blue-100 rounded-full mb-6">
+          <span class="text-sm font-bold text-blue-700">── そのお悩み、すべて解決します ──</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
+          勤怠と経費精算を1つにまとめた<br>
+          <span class="text-blue-600">"中小企業のための"</span>クラウドサービス
+        </h2>
+
+        <p class="text-base lg:text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
+          SmartKintai Cloudは、スマホ1つで勤怠打刻も経費精算も完結するクラウドサービス。
+          シンプルなUIと法改正への自動対応で、中小企業の労務担当者の負担を根本から軽減します。
+        </p>
+
+        <!-- コンセプト図 -->
+        <div class="mb-12">
+          <img src="./images/img-solution-01.png" alt="SmartKintai Cloud コンセプト図" class="rounded-2xl shadow-lg w-full max-w-4xl mx-auto">
+        </div>
+
+        <!-- 3つの特徴アイコン -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 lg:w-16 lg:h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-3 shadow-md">
+              <span class="text-2xl lg:text-3xl">📱</span>
+            </div>
+            <p class="text-sm lg:text-base font-bold text-gray-900">1つで完結</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 lg:w-16 lg:h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-3 shadow-md">
+              <span class="text-2xl lg:text-3xl">✨</span>
+            </div>
+            <p class="text-sm lg:text-base font-bold text-gray-900">直感的なUI</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 lg:w-16 lg:h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-3 shadow-md">
+              <span class="text-2xl lg:text-3xl">⚖️</span>
+            </div>
+            <p class="text-sm lg:text-base font-bold text-gray-900">法改正に自動対応</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション④：選ばれる3つの理由 -->
+  <!-- ============================================= -->
+  <section id="features" class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-20">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">FEATURES</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          中小企業に選ばれ続ける、<br class="sm:hidden">
+          <span class="text-blue-600">3つの理由</span>
+        </h2>
+      </div>
+
+      <!-- 理由①（左：画像／右：テキスト） -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+        <div class="order-2 lg:order-1">
+          <img src="./images/img-features-01.jpg" alt="SmartKintai Cloud アプリ画面：打刻と経費申請" class="rounded-2xl shadow-xl w-full">
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="text-6xl lg:text-7xl font-black text-blue-600/20 mb-2">01</div>
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 leading-tight mb-5">
+            勤怠も経費精算も、<br>
+            <span class="text-blue-600">1つのアプリで完全完結</span>
+          </h3>
+          <p class="text-base text-gray-600 leading-relaxed mb-6">
+            別々のシステムで管理する煩雑さを解消。打刻も経費申請も同じアプリで完結し、データ連携の手間がゼロに。月末の集計作業から、担当者を解放します。
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">勤怠と経費の二重入力が不要</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">スマホ・PCのどちらからでも操作可能</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">データはリアルタイムで自動連携</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 理由②（左：テキスト／右：画像） -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+        <div>
+          <div class="text-6xl lg:text-7xl font-black text-blue-600/20 mb-2">02</div>
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 leading-tight mb-5">
+            マニュアル不要。<br>
+            <span class="text-blue-600">見ればわかる、シンプルUI</span>
+          </h3>
+          <p class="text-base text-gray-600 leading-relaxed mb-6">
+            打刻ボタンは画面中央に大きく1つだけ。経費精算は領収書の写真を撮るだけ。シニア世代の従業員でも初日から使える、徹底した「迷わない」設計です。
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">大きなボタンで誤操作を防止</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">領収書はカメラで撮るだけで自動データ化</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">従業員アンケート98%が「使いやすい」と回答</span></li>
+          </ul>
+        </div>
+        <div>
+          <img src="./images/img-features-02.jpg" alt="SmartKintai Cloud のシンプルな打刻画面" class="rounded-2xl shadow-xl w-full">
+        </div>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-24">
+        <div>
+          <div class="text-6xl lg:text-7xl font-black text-blue-600/20 mb-2">0903</div>
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 leading-tight mb-5">
+            このサイトは正真正銘<br>
+            <span class="text-blue-600">俺が作りました</span>
+          </h3>
+          <p class="text-base text-gray-600 leading-relaxed mb-6">
+            つまりは自由にコンテンツを配置可能
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">猫猫猫猫猫猫猫猫猫猫猫猫猫猫</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">しかも猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">猫猫猫猫猫猫猫猫猫猫猫猫猫猫</span></li>
+          </ul>
+        </div>
+        <div>
+          <img src="./images/IMG_1987.jpeg" alt="SmartKintai Cloud のシンプルな打刻画面" class="rounded-2xl shadow-xl w-full">
+        </div>
+      </div>
+
+      <!-- 理由③（左：画像／右：テキスト） -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="./images/img-features-03.jpg" alt="法改正対応バッジ：インボイス・電帳法・労基法" class="rounded-2xl shadow-xl w-full">
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="text-6xl lg:text-7xl font-black text-blue-600/20 mb-2">03</div>
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 leading-tight mb-5">
+            <span class="text-blue-600">法改正に自動対応</span>。<br>
+            担当者の負担はゼロ
+          </h3>
+          <p class="text-base text-gray-600 leading-relaxed mb-6">
+            インボイス制度・電子帳簿保存法・労働基準法改正など、複雑な法改正にもシステム側が自動でアップデート対応。追加費用は一切かかりません。
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">インボイス制度に標準対応</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">電子帳簿保存法の3要件を自動クリア</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">法改正対応費用は月額料金に含まれる</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑤：数値で見る導入効果（CTA②） -->
+  <!-- ============================================= -->
+  <section class="bg-gradient-to-br from-blue-600 to-blue-800 py-16 lg:py-24 relative overflow-hidden">
+    <!-- 装飾円 -->
+    <div class="absolute top-0 right-0 -mt-32 -mr-32 w-96 h-96 bg-blue-500 rounded-full opacity-30 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 -mb-32 -ml-32 w-96 h-96 bg-blue-400 rounded-full opacity-20 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-200 mb-3 tracking-widest">RESULTS</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight">
+          導入企業の声から見えた、<br class="sm:hidden">
+          <span class="text-orange-300">3つの確かな効果</span>
+        </h2>
+      </div>
+
+      <!-- 数値カード -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
+
+        <!-- 数値① -->
+        <div class="bg-white rounded-2xl p-8 lg:p-10 text-center shadow-xl">
+          <p class="text-sm font-bold text-blue-600 mb-3">月末の集計時間</p>
+          <div class="flex items-baseline justify-center mb-3">
+            <span class="text-6xl lg:text-7xl font-black text-blue-700">▲75</span>
+            <span class="text-3xl lg:text-4xl font-black text-blue-700">%</span>
+          </div>
+          <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
+            勤怠集計に費やしていた<br>作業時間を大幅に削減
+          </p>
+        </div>
+
+        <!-- 数値② -->
+        <div class="bg-white rounded-2xl p-8 lg:p-10 text-center shadow-xl md:transform md:-translate-y-4 ring-4 ring-orange-300">
+          <span class="inline-block px-3 py-1 bg-orange-500 text-white text-xs font-bold rounded-full mb-3">最も人気の効果</span>
+          <p class="text-sm font-bold text-blue-600 mb-3">紙保管・人件費の削減</p>
+          <div class="flex items-baseline justify-center mb-3">
+            <span class="text-5xl lg:text-6xl font-black text-orange-500">▲45</span>
+            <span class="text-2xl lg:text-3xl font-black text-orange-500">万円</span>
+            <span class="text-base lg:text-lg font-bold text-orange-500 ml-1">/年</span>
+          </div>
+          <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
+            50名規模の企業で<br>年間コストを丸ごと削減
+          </p>
+        </div>
+
+        <!-- 数値③ -->
+        <div class="bg-white rounded-2xl p-8 lg:p-10 text-center shadow-xl">
+          <p class="text-sm font-bold text-blue-600 mb-3">従業員満足度</p>
+          <div class="flex items-baseline justify-center mb-3">
+            <span class="text-6xl lg:text-7xl font-black text-blue-700">98</span>
+            <span class="text-3xl lg:text-4xl font-black text-blue-700">%</span>
+          </div>
+          <p class="text-sm lg:text-base text-gray-600 leading-relaxed">
+            「使いやすい」と<br>回答した従業員の割合
+          </p>
+        </div>
+
+      </div>
+
+      <!-- 注釈 -->
+      <p class="text-center text-xs lg:text-sm text-blue-100 mb-8">
+        ※2025年 当社調べ／導入企業1,200社の平均値
+      </p>
+
+      <!-- CTA② -->
+      <div class="text-center">
+        <a href="#cta-final" class="inline-flex items-center justify-center px-10 py-5 bg-orange-500 text-base lg:text-lg font-bold text-white rounded-lg hover:bg-orange-600 shadow-2xl hover:shadow-orange-500/50 transform hover:-translate-y-1 transition">
+          まずは30日間、無料で試してみる
+          <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <p class="text-sm text-blue-100 mt-4">
+          実際の削減効果を、貴社の業務で体感してください
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑥：主な機能一覧 -->
+  <!-- ============================================= -->
+  <section id="features-list" class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">FUNCTIONS</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          業務に必要な機能を、<br class="sm:hidden">
+          <span class="text-blue-600">すべて標準搭載</span>
+        </h2>
+        <p class="text-base lg:text-lg text-gray-600 leading-relaxed mt-4">
+          勤怠管理から経費精算、レポート出力まで。<br class="hidden sm:inline">
+          中小企業の労務業務に必要な機能を、追加料金なしでご利用いただけます。
+        </p>
+      </div>
+
+      <!-- 勤怠管理 -->
+      <div class="mb-12 lg:mb-16">
+        <div class="flex items-center mb-6">
+          <div class="w-1 h-7 bg-blue-600 rounded-full mr-3"></div>
+          <h3 class="text-lg lg:text-xl font-bold text-gray-900">勤怠管理</h3>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-01.png" alt="スマホ打刻" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">スマホ打刻</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">スマホ1つで出退勤を記録</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-02.png" alt="GPS打刻" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">GPS打刻</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">位置情報で勤務地を自動記録</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-03.png" alt="シフト管理" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">シフト管理</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">シフト作成・共有が直感的に</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-04.png" alt="有給管理" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">有給管理</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">残日数を自動計算・通知</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 経費精算 -->
+      <div class="mb-12 lg:mb-16">
+        <div class="flex items-center mb-6">
+          <div class="w-1 h-7 bg-blue-600 rounded-full mr-3"></div>
+          <h3 class="text-lg lg:text-xl font-bold text-gray-900">経費精算</h3>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-05.png" alt="領収書スキャン" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">領収書スキャン</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">写真撮影でデータ化</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-06.png" alt="交通費自動計算" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">交通費自動計算</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">経路検索と金額算出を自動化</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-07.png" alt="承認ワークフロー" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">承認ワークフロー</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">多段階承認をオンラインで</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- レポート・連携 -->
+      <div>
+        <div class="flex items-center mb-6">
+          <div class="w-1 h-7 bg-blue-600 rounded-full mr-3"></div>
+          <h3 class="text-lg lg:text-xl font-bold text-gray-900">レポート・連携</h3>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-08.png" alt="自動集計レポート" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">自動集計レポート</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">月次集計をワンクリックで</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-09.png" alt="給与ソフト連携" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">給与ソフト連携</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">主要給与ソフトと自動連携</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 lg:p-6 hover:bg-blue-50 hover:shadow-md transition border border-gray-100">
+            <img src="./images/icon-functions-10.png" alt="CSV出力" class="w-12 h-12 lg:w-14 lg:h-14 mb-3">
+            <h4 class="text-sm lg:text-base font-bold text-gray-900 mb-1.5">CSV出力</h4>
+            <p class="text-xs lg:text-sm text-gray-600 leading-relaxed">既存業務にもスムーズに統合</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 詳細リンク -->
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 transition">
+          機能の詳細をすべて見る
+          <svg class="w-5 h-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑦：導入までの3ステップ -->
+  <!-- ============================================= -->
+  <section class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">FLOW</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          最短当日から利用開始。<br class="sm:hidden">
+          <span class="text-blue-600">かんたん3ステップ</span>
+        </h2>
+        <p class="text-base lg:text-lg text-gray-600 leading-relaxed mt-4">
+          専門知識は一切不要。専任スタッフによる無料サポートで、安心してスタートできます。
+        </p>
+      </div>
+
+      <!-- 3ステップ -->
+      <div class="grid lg:grid-cols-3 gap-6 lg:gap-8 relative">
+
+        <!-- 矢印（PCのみ） -->
+        <div class="hidden lg:block absolute top-1/2 left-1/3 -translate-y-1/2 -translate-x-1/2 z-10">
+          <svg class="w-10 h-10 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <div class="hidden lg:block absolute top-1/2 left-2/3 -translate-y-1/2 -translate-x-1/2 z-10">
+          <svg class="w-10 h-10 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+          </svg>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition relative">
+          <div class="absolute -top-4 left-6 lg:left-8 bg-orange-500 text-white text-xs font-black px-3 py-1 rounded-full">STEP 01</div>
+          <img src="./images/img-flow-01.jpg" alt="お申し込み" class="w-full h-40 object-contain mb-4 mt-4">
+          <h3 class="text-lg lg:text-xl font-bold text-gray-900 mb-3">お申し込み</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3">
+            フォームに会社名・メールアドレスを入力するだけ。<strong class="text-blue-600">最短1分</strong>で完了します。
+          </p>
+          <p class="text-xs text-gray-500">※クレジットカード登録は不要です</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition relative">
+          <div class="absolute -top-4 left-6 lg:left-8 bg-orange-500 text-white text-xs font-black px-3 py-1 rounded-full">STEP 02</div>
+          <img src="./images/img-flow-02.jpg" alt="初期設定" class="w-full h-40 object-contain mb-4 mt-4">
+          <h3 class="text-lg lg:text-xl font-bold text-gray-900 mb-3">初期設定</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3">
+            専任スタッフが<strong class="text-blue-600">無料でセットアップ</strong>をサポート。従業員情報のインポートもお任せください。
+          </p>
+          <p class="text-xs text-gray-500">※最短当日で利用開始可能</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition relative">
+          <div class="absolute -top-4 left-6 lg:left-8 bg-orange-500 text-white text-xs font-black px-3 py-1 rounded-full">STEP 03</div>
+          <img src="./images/img-flow-03.jpg" alt="利用開始" class="w-full h-40 object-contain mb-4 mt-4">
+          <h3 class="text-lg lg:text-xl font-bold text-gray-900 mb-3">利用開始</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3">
+            スマホアプリをダウンロードして、<strong class="text-blue-600">即日 打刻スタート</strong>。経費精算も同じアプリで完結します。
+          </p>
+          <p class="text-xs text-gray-500">※iOS/Android両対応</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑧：導入事例（CTA③） -->
+  <!-- ============================================= -->
+  <section id="cases" class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">CASE STUDIES</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          30〜100名規模の企業様から、<br>
+          <span class="text-blue-600">続々とお喜びの声</span>
+        </h2>
+      </div>
+
+      <!-- 事例カード -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- 事例1 -->
+        <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition border border-gray-100">
+          <img src="./images/img-case_studies-01.png" alt="株式会社○○ロゴ" class="h-20 mb-4 object-contain object-left">
+          <p class="text-xs text-gray-500 mb-4">製造業 ／ 従業員62名</p>
+
+          <div class="bg-blue-50 rounded-xl p-4 lg:p-5 mb-5 relative">
+            <p class="text-sm text-gray-700 leading-relaxed">
+              「月末の集計に毎月15時間かかっていた作業が、<strong class="text-blue-700">3時間に短縮</strong>されました。社員からも『使いやすい』と好評です。」
+            </p>
+          </div>
+
+          <div class="flex items-center mb-5">
+            <img src="./images/case-user-1.jpg" alt="総務部 山田様" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <p class="text-sm font-bold text-gray-900">総務部 山田様</p>
+              <p class="text-xs text-gray-500">勤怠管理ご担当</p>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-4">
+            <p class="text-xs text-gray-500 mb-1">📉 集計工数</p>
+            <p class="text-sm font-bold text-blue-700">月15時間 → 3時間（80%削減）</p>
+          </div>
+        </div>
+
+        <!-- 事例2 -->
+        <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition border border-gray-100">
+          <img src="./images/img-case_studies-02.png" alt="株式会社△△ロゴ" class="h-20 mb-4 object-contain object-left">
+          <p class="text-xs text-gray-500 mb-4">小売業 ／ 従業員45名</p>
+
+          <div class="bg-blue-50 rounded-xl p-4 lg:p-5 mb-5 relative">
+            <p class="text-sm text-gray-700 leading-relaxed">
+              「経費精算と勤怠が一体になったことで、<strong class="text-blue-700">業務時間が半分</strong>に。テレワーク対応もスムーズになりました。」
+            </p>
+          </div>
+
+          <div class="flex items-center mb-5">
+            <img src="./images/case-user-2.jpg" alt="経理部 佐藤様" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <p class="text-sm font-bold text-gray-900">経理部 佐藤様</p>
+              <p class="text-xs text-gray-500">経費精算ご担当</p>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-4">
+            <p class="text-xs text-gray-500 mb-1">📉 経費精算時間</p>
+            <p class="text-sm font-bold text-blue-700">月20時間 → 10時間（50%削減）</p>
+          </div>
+        </div>
+
+        <!-- 事例3 -->
+        <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 lg:p-8 shadow-md hover:shadow-xl transition border border-gray-100">
+          <img src="./images/img-case_studies-03.png" alt="株式会社□□ロゴ" class="h-20 mb-4 object-contain object-left">
+          <p class="text-xs text-gray-500 mb-4">士業（社労士事務所）／ 従業員38名</p>
+
+          <div class="bg-blue-50 rounded-xl p-4 lg:p-5 mb-5 relative">
+            <p class="text-sm text-gray-700 leading-relaxed">
+              「インボイスや電帳法対応に追われていましたが、<strong class="text-blue-700">法改正対応の負担がゼロ</strong>に。本業に集中できるようになりました。」
+            </p>
+          </div>
+
+          <div class="flex items-center mb-5">
+            <img src="./images/case-user-3.jpg" alt="代表 鈴木様" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <p class="text-sm font-bold text-gray-900">代表 鈴木様</p>
+              <p class="text-xs text-gray-500">経営者</p>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-4">
+            <p class="text-xs text-gray-500 mb-1">📉 法改正調査時間</p>
+            <p class="text-sm font-bold text-blue-700">年間40時間 → 0時間</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 事例一覧リンク -->
+      <div class="text-center mt-10 mb-12">
+        <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 transition">
+          導入事例をもっと見る
+          <svg class="w-5 h-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- CTA③ -->
+      <div class="bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl p-8 lg:p-12 text-center border border-blue-100">
+        <p class="text-base lg:text-lg text-gray-700 mb-6 font-medium">
+          貴社でも、同じ成果を実現できます。<br class="sm:hidden">
+          まずは30日間、お気軽にお試しください。
+        </p>
+        <a href="#cta-final" class="inline-flex items-center justify-center px-10 py-4 lg:py-5 bg-orange-500 text-base lg:text-lg font-bold text-white rounded-lg hover:bg-orange-600 shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition">
+          貴社でも30日間、無料でお試しください
+          <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑨：料金プラン -->
+  <!-- ============================================= -->
+  <section id="pricing" class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">PRICING</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          シンプルでわかりやすい<br class="sm:hidden">
+          <span class="text-blue-600">料金プラン</span>
+        </h2>
+        <p class="text-base lg:text-lg text-gray-600 leading-relaxed mt-4">
+          初期費用無料・最低契約期間なし。<br class="hidden sm:inline">
+          すべてのプランで30日間無料トライアルをご利用いただけます。
+        </p>
+      </div>
+
+      <!-- 料金カード -->
+      <div class="grid lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+
+        <!-- スタータープラン -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md border border-gray-100">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">スタータープラン</h3>
+            <p class="text-sm text-gray-500">〜30名規模の企業様向け</p>
+          </div>
+          <div class="mb-6 pb-6 border-b border-gray-200">
+            <p class="text-xs text-gray-500 mb-1">1ユーザーあたり</p>
+            <div class="flex items-baseline">
+              <span class="text-4xl lg:text-5xl font-black text-gray-900">¥300</span>
+              <span class="text-base text-gray-500 ml-2">/月〜</span>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">勤怠打刻（スマホ・PC・GPS）</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">経費精算（基本機能）</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">月次レポート出力</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">メールサポート</span></li>
+          </ul>
+          <a href="#cta-final" class="block w-full py-3 text-center bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition">
+            無料で試す
+          </a>
+        </div>
+
+        <!-- ビジネスプラン（人気） -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-2xl border-4 border-orange-500 relative lg:transform lg:-translate-y-4">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+            <span class="inline-block px-4 py-1 bg-orange-500 text-white text-xs font-black rounded-full shadow-md">★ 人気No.1</span>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-blue-700 mb-2">ビジネスプラン</h3>
+            <p class="text-sm text-gray-500">〜100名規模の企業様向け</p>
+          </div>
+          <div class="mb-6 pb-6 border-b border-gray-200">
+            <p class="text-xs text-gray-500 mb-1">1ユーザーあたり</p>
+            <div class="flex items-baseline">
+              <span class="text-4xl lg:text-5xl font-black text-blue-700">¥500</span>
+              <span class="text-base text-gray-500 ml-2">/月〜</span>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700"><strong>スタータープランの全機能</strong></span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">シフト管理・有給管理</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">承認ワークフロー</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">給与ソフト連携</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">優先サポート（電話・チャット）</span></li>
+          </ul>
+          <a href="#cta-final" class="block w-full py-3 text-center bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 shadow-lg transition">
+            無料で試す ▶
+          </a>
+        </div>
+
+        <!-- エンタープライズプラン -->
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md border border-gray-100">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">エンタープライズ</h3>
+            <p class="text-sm text-gray-500">100名以上の企業様向け</p>
+          </div>
+          <div class="mb-6 pb-6 border-b border-gray-200">
+            <p class="text-xs text-gray-500 mb-1">カスタム見積</p>
+            <div class="flex items-baseline">
+              <span class="text-3xl lg:text-4xl font-black text-gray-900">お問い合わせ</span>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700"><strong>ビジネスプランの全機能</strong></span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">専任カスタマーサクセス担当</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">カスタム機能開発対応</span></li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-2">✓</span><span class="text-sm text-gray-700">SLA・SSO対応</span></li>
+          </ul>
+          <a href="#" class="block w-full py-3 text-center bg-white border-2 border-gray-700 text-gray-700 font-bold rounded-lg hover:bg-gray-50 transition">
+            お問い合わせ
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 安心ポイント -->
+      <div class="mt-12 lg:mt-16 max-w-4xl mx-auto bg-white rounded-xl p-6 lg:p-8 shadow-sm border border-gray-100">
+        <div class="grid sm:grid-cols-3 gap-4 text-center">
+          <div>
+            <p class="text-2xl mb-1">🎁</p>
+            <p class="text-sm font-bold text-gray-900">30日間無料トライアル</p>
+            <p class="text-xs text-gray-500 mt-1">全プランで利用可能</p>
+          </div>
+          <div>
+            <p class="text-2xl mb-1">💰</p>
+            <p class="text-sm font-bold text-gray-900">初期費用無料</p>
+            <p class="text-xs text-gray-500 mt-1">導入ハードルゼロ</p>
+          </div>
+          <div>
+            <p class="text-2xl mb-1">📅</p>
+            <p class="text-sm font-bold text-gray-900">最低契約期間なし</p>
+            <p class="text-xs text-gray-500 mt-1">月単位で柔軟に</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑩：よくある質問（FAQ） -->
+  <!-- ============================================= -->
+  <section id="faq" class="bg-white py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">FAQ</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          よくあるご質問
+        </h2>
+      </div>
+
+      <!-- FAQリスト -->
+      <div class="space-y-4">
+
+        <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer hover:bg-gray-100 transition">
+            <div class="flex items-start flex-1 pr-4">
+              <span class="text-blue-600 font-black text-lg mr-3 flex-shrink-0">Q.</span>
+              <span class="text-sm lg:text-base font-bold text-gray-900">無料トライアル後、自動で課金されますか？</span>
+            </div>
+            <svg class="w-5 h-5 text-blue-600 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="px-5 lg:px-6 pb-5 lg:pb-6 pt-0">
+            <div class="flex items-start pl-1">
+              <span class="text-orange-500 font-black text-lg mr-3 flex-shrink-0">A.</span>
+              <p class="text-sm lg:text-base text-gray-700 leading-relaxed">いいえ、自動課金は一切ありません。トライアル開始時にクレジットカード登録は不要のため、期間終了後に勝手に料金が発生することはありません。継続をご希望の場合のみ、別途お申込みいただきます。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer hover:bg-gray-100 transition">
+            <div class="flex items-start flex-1 pr-4">
+              <span class="text-blue-600 font-black text-lg mr-3 flex-shrink-0">Q.</span>
+              <span class="text-sm lg:text-base font-bold text-gray-900">ITに不慣れな従業員でも使えますか？</span>
+            </div>
+            <svg class="w-5 h-5 text-blue-600 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="px-5 lg:px-6 pb-5 lg:pb-6 pt-0">
+            <div class="flex items-start pl-1">
+              <span class="text-orange-500 font-black text-lg mr-3 flex-shrink-0">A.</span>
+              <p class="text-sm lg:text-base text-gray-700 leading-relaxed">はい、マニュアル不要のシンプルなUI設計のため、シニア世代の方からも好評です。実際に従業員アンケートでは98%が「使いやすい」と回答しています。導入時には専任スタッフによる無料の操作レクチャーもご利用いただけます。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer hover:bg-gray-100 transition">
+            <div class="flex items-start flex-1 pr-4">
+              <span class="text-blue-600 font-black text-lg mr-3 flex-shrink-0">Q.</span>
+              <span class="text-sm lg:text-base font-bold text-gray-900">既存の給与計算ソフトと連携できますか？</span>
+            </div>
+            <svg class="w-5 h-5 text-blue-600 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="px-5 lg:px-6 pb-5 lg:pb-6 pt-0">
+            <div class="flex items-start pl-1">
+              <span class="text-orange-500 font-black text-lg mr-3 flex-shrink-0">A.</span>
+              <p class="text-sm lg:text-base text-gray-700 leading-relaxed">主要な給与ソフト（弥生給与、給与奉行、freee人事労務、マネーフォワード クラウド給与など）と連携可能です。CSV出力にも対応しているため、ほぼすべてのシステムと組み合わせてご利用いただけます。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer hover:bg-gray-100 transition">
+            <div class="flex items-start flex-1 pr-4">
+              <span class="text-blue-600 font-black text-lg mr-3 flex-shrink-0">Q.</span>
+              <span class="text-sm lg:text-base font-bold text-gray-900">データのセキュリティは大丈夫ですか？</span>
+            </div>
+            <svg class="w-5 h-5 text-blue-600 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="px-5 lg:px-6 pb-5 lg:pb-6 pt-0">
+            <div class="flex items-start pl-1">
+              <span class="text-orange-500 font-black text-lg mr-3 flex-shrink-0">A.</span>
+              <p class="text-sm lg:text-base text-gray-700 leading-relaxed">国際規格ISO27001（情報セキュリティマネジメントシステム）認証を取得しております。通信はすべてSSLで暗号化、データは国内の高セキュリティデータセンターで管理しています。プライバシーマークも取得済みです。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer hover:bg-gray-100 transition">
+            <div class="flex items-start flex-1 pr-4">
+              <span class="text-blue-600 font-black text-lg mr-3 flex-shrink-0">Q.</span>
+              <span class="text-sm lg:text-base font-bold text-gray-900">導入時のサポートはありますか？</span>
+            </div>
+            <svg class="w-5 h-5 text-blue-600 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="px-5 lg:px-6 pb-5 lg:pb-6 pt-0">
+            <div class="flex items-start pl-1">
+              <span class="text-orange-500 font-black text-lg mr-3 flex-shrink-0">A.</span>
+              <p class="text-sm lg:text-base text-gray-700 leading-relaxed">専任スタッフによる初期設定・操作レクチャーを<strong>無料</strong>でご提供しています。従業員情報のインポートや既存システムからの移行についても、お気軽にご相談ください。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+          <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer hover:bg-gray-100 transition">
+            <div class="flex items-start flex-1 pr-4">
+              <span class="text-blue-600 font-black text-lg mr-3 flex-shrink-0">Q.</span>
+              <span class="text-sm lg:text-base font-bold text-gray-900">法改正があった場合、追加料金は発生しますか？</span>
+            </div>
+            <svg class="w-5 h-5 text-blue-600 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="px-5 lg:px-6 pb-5 lg:pb-6 pt-0">
+            <div class="flex items-start pl-1">
+              <span class="text-orange-500 font-black text-lg mr-3 flex-shrink-0">A.</span>
+              <p class="text-sm lg:text-base text-gray-700 leading-relaxed">追加料金は一切発生しません。インボイス制度・電子帳簿保存法・労働基準法改正などへの対応は、すべて月額料金に含まれており、システムが自動でアップデートされます。</p>
+            </div>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- 問い合わせ誘導 -->
+      <div class="text-center mt-10">
+        <p class="text-sm text-gray-600 mb-3">他にご不明な点はございませんか？</p>
+        <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 transition">
+          お問い合わせフォームへ
+          <svg class="w-5 h-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑪：運営会社・セキュリティ -->
+  <!-- ============================================= -->
+  <section class="bg-gray-50 py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 見出し -->
+      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <p class="text-sm font-bold text-blue-600 mb-3 tracking-widest">TRUST &amp; SECURITY</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-tight">
+          安心してお任せいただける、<br class="sm:hidden">
+          <span class="text-blue-600">運営体制</span>
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
+
+        <!-- 左：運営会社情報 -->
+        <div class="bg-white rounded-2xl p-6 lg:p-10 shadow-md border border-gray-100">
+          <div class="flex items-center mb-6">
+            <div class="w-1 h-7 bg-blue-600 rounded-full mr-3"></div>
+            <h3 class="text-lg lg:text-xl font-bold text-gray-900">運営会社</h3>
+          </div>
+
+          <img src="./images/img-trust-01.png" alt="株式会社スマートワークス" class="h-16 mb-6 object-contain object-left">
+
+          <dl class="space-y-3 mb-6">
+            <div class="flex border-b border-gray-100 pb-3">
+              <dt class="w-28 text-sm text-gray-500 flex-shrink-0">会社名</dt>
+              <dd class="text-sm text-gray-900 font-medium">株式会社スマートワークス</dd>
+            </div>
+            <div class="flex border-b border-gray-100 pb-3">
+              <dt class="w-28 text-sm text-gray-500 flex-shrink-0">所在地</dt>
+              <dd class="text-sm text-gray-900 font-medium">東京都千代田区○○○ 1-2-3</dd>
+            </div>
+            <div class="flex border-b border-gray-100 pb-3">
+              <dt class="w-28 text-sm text-gray-500 flex-shrink-0">設立</dt>
+              <dd class="text-sm text-gray-900 font-medium">2015年4月</dd>
+            </div>
+            <div class="flex border-b border-gray-100 pb-3">
+              <dt class="w-28 text-sm text-gray-500 flex-shrink-0">代表者</dt>
+              <dd class="text-sm text-gray-900 font-medium">代表取締役 ○○ ○○</dd>
+            </div>
+            <div class="flex">
+              <dt class="w-28 text-sm text-gray-500 flex-shrink-0">資本金</dt>
+              <dd class="text-sm text-gray-900 font-medium">5,000万円</dd>
+            </div>
+          </dl>
+
+          <p class="text-sm text-gray-500 mb-3">主な取引先</p>
+          <div class="grid grid-cols-3 gap-3">
+            <img src="./images/img-trust-02.png" alt="取引先1" class="h-16 object-contain bg-gray-50 rounded p-2">
+            <img src="./images/img-trust-03.png" alt="取引先2" class="h-16 object-contain bg-gray-50 rounded p-2">
+            <img src="./images/img-trust-04.png" alt="取引先3" class="h-16 object-contain bg-gray-50 rounded p-2">
+            <img src="./images/img-trust-05.png" alt="取引先4" class="h-16 object-contain bg-gray-50 rounded p-2">
+            <img src="./images/img-trust-06.png" alt="取引先5" class="h-16 object-contain bg-gray-50 rounded p-2">
+            <img src="./images/img-trust-07.png" alt="取引先6" class="h-16 object-contain bg-gray-50 rounded p-2">
+          </div>
+        </div>
+
+        <!-- 右：セキュリティ -->
+        <div class="bg-white rounded-2xl p-6 lg:p-10 shadow-md border border-gray-100">
+          <div class="flex items-center mb-6">
+            <div class="w-1 h-7 bg-blue-600 rounded-full mr-3"></div>
+            <h3 class="text-lg lg:text-xl font-bold text-gray-900">セキュリティ・コンプライアンス</h3>
+          </div>
+
+          <p class="text-sm text-gray-600 leading-relaxed mb-8">
+            お客様の大切なデータを守るため、SmartKintai Cloudは国際基準のセキュリティ体制を整備しています。
+          </p>
+
+          <!-- 認証バッジ -->
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="text-center p-4 bg-gray-50 rounded-xl">
+              <img src="./images/icon-security-01.png" alt="ISO27001認証" class="h-20 mx-auto mb-3 object-contain">
+              <p class="text-xs font-bold text-gray-900">ISO27001 認証取得</p>
+              <p class="text-xs text-gray-500 mt-1">情報セキュリティ国際規格</p>
+            </div>
+            <div class="text-center p-4 bg-gray-50 rounded-xl">
+              <img src="./images/icon-security-02.png" alt="プライバシーマーク" class="h-20 mx-auto mb-3 object-contain">
+              <p class="text-xs font-bold text-gray-900">プライバシーマーク</p>
+              <p class="text-xs text-gray-500 mt-1">個人情報保護体制</p>
+            </div>
+          </div>
+
+          <!-- 追加項目 -->
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="text-blue-600 text-lg mr-3 flex-shrink-0">🔒</span>
+              <div>
+                <p class="text-sm font-bold text-gray-900">SSL/TLS暗号化通信</p>
+                <p class="text-xs text-gray-500">すべての通信を暗号化し、盗聴・改ざんを防止</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 text-lg mr-3 flex-shrink-0">🇯🇵</span>
+              <div>
+                <p class="text-sm font-bold text-gray-900">国内データセンター</p>
+                <p class="text-xs text-gray-500">国内の高セキュリティ施設で24時間365日監視</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 text-lg mr-3 flex-shrink-0">💾</span>
+              <div>
+                <p class="text-sm font-bold text-gray-900">自動バックアップ</p>
+                <p class="text-xs text-gray-500">毎日自動バックアップ、災害時もデータを保全</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- セクション⑫：最終CTAセクション（CTA④） -->
+  <!-- ============================================= -->
+  <section id="cta-final" class="bg-gradient-to-br from-blue-700 via-blue-600 to-blue-800 py-16 lg:py-24 relative overflow-hidden">
+    <!-- 装飾円 -->
+    <div class="absolute top-0 right-0 -mt-32 -mr-32 w-96 h-96 bg-orange-400 rounded-full opacity-20 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 -mb-32 -ml-32 w-96 h-96 bg-blue-400 rounded-full opacity-30 blur-3xl"></div>
+
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+      <p class="text-sm font-bold text-orange-300 mb-3 tracking-widest">START FREE TRIAL</p>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6">
+        月末の集計作業から、<br>
+        <span class="text-orange-300">解放されませんか？</span>
+      </h2>
+
+      <p class="text-base lg:text-lg text-blue-100 leading-relaxed mb-10">
+        SmartKintai Cloudは、30日間すべての機能を無料でお試しいただけます。<br class="hidden sm:inline">
+        クレジットカード登録は不要。期間終了後の自動課金もありません。
+      </p>
+
+      <!-- 安心ポイント4つ -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10 max-w-3xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+          <p class="text-2xl lg:text-3xl mb-2">💳</p>
+          <p class="text-xs lg:text-sm font-bold text-white">クレカ登録不要</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+          <p class="text-2xl lg:text-3xl mb-2">✨</p>
+          <p class="text-xs lg:text-sm font-bold text-white">全機能 利用可能</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+          <p class="text-2xl lg:text-3xl mb-2">👨‍💼</p>
+          <p class="text-xs lg:text-sm font-bold text-white">無料サポート付</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+          <p class="text-2xl lg:text-3xl mb-2">🔓</p>
+          <p class="text-xs lg:text-sm font-bold text-white">自動課金なし</p>
+        </div>
+      </div>
+
+      <!-- メインCTA -->
+      <a href="#" class="inline-flex items-center justify-center px-8 sm:px-12 py-5 lg:py-6 bg-orange-500 text-lg lg:text-xl font-black text-white rounded-xl hover:bg-orange-600 shadow-2xl hover:shadow-orange-500/50 transform hover:-translate-y-1 transition mb-6">
+        30日間 無料で試してみる
+        <svg class="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <p class="text-xs lg:text-sm text-blue-200 mb-10">
+        ※1分で申込完了 ／ 最短当日から利用開始
+      </p>
+
+      <!-- 区切り -->
+      <div class="flex items-center justify-center mb-8">
+        <div class="h-px w-16 bg-white/30"></div>
+        <p class="text-sm text-blue-200 mx-4">もしくは</p>
+        <div class="h-px w-16 bg-white/30"></div>
+      </div>
+
+      <!-- サブCTA -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-lg hover:bg-white/20 transition">
+          📄 資料をダウンロードする
+        </a>
+        <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-lg hover:bg-white/20 transition">
+          ✉️ お問い合わせはこちら
+        </a>
+      </div>
+
+      <!-- 電話 -->
+      <div class="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 inline-block border border-white/20">
+        <p class="text-xs text-blue-200 mb-1">お電話でのお問い合わせ</p>
+        <p class="text-2xl lg:text-3xl font-black text-white">📞 0120-XXX-XXX</p>
+        <p class="text-xs text-blue-200 mt-1">平日 9:00 - 18:00（土日祝休）</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- フッター -->
+  <!-- ============================================= -->
+  <footer class="bg-gray-900 text-gray-300 pt-12 lg:pt-16 pb-24 lg:pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 上部：4カラム -->
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-10 pb-10 border-b border-gray-700">
+
+        <!-- ロゴ・会社情報 -->
+        <div class="col-span-2">
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-bold text-white">SmartKintai Cloud</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4">
+            勤怠と経費精算を1つにまとめた、中小企業のためのクラウドサービス。
+          </p>
+          <div class="flex space-x-3">
+            <a href="#" aria-label="X (Twitter)" class="w-8 h-8 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-8 h-8 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="w-8 h-8 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 製品 -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4">製品</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#features" class="hover:text-white transition">機能一覧</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">料金プラン</a></li>
+            <li><a href="#cases" class="hover:text-white transition">導入事例</a></li>
+            <li><a href="#" class="hover:text-white transition">資料ダウンロード</a></li>
+          </ul>
+        </div>
+
+        <!-- サポート -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4">サポート</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#faq" class="hover:text-white transition">よくある質問</a></li>
+            <li><a href="#" class="hover:text-white transition">お問い合わせ</a></li>
+            <li><a href="#" class="hover:text-white transition">ヘルプセンター</a></li>
+            <li><a href="#" class="hover:text-white transition">障害情報</a></li>
+          </ul>
+        </div>
+
+        <!-- 会社情報 -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4">会社情報</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">運営会社</a></li>
+            <li><a href="#" class="hover:text-white transition">採用情報</a></li>
+            <li><a href="#" class="hover:text-white transition">ニュース</a></li>
+            <li><a href="#" class="hover:text-white transition">パートナー</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- 下部：法令対応＋コピーライト -->
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center text-xs text-gray-500 space-y-4 lg:space-y-0">
+        <div class="flex flex-wrap gap-x-5 gap-y-2">
+          <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
+          <a href="#" class="hover:text-white transition">利用規約</a>
+          <a href="#" class="hover:text-white transition">特定商取引法に基づく表記</a>
+          <a href="#" class="hover:text-white transition">情報セキュリティ方針</a>
+        </div>
+        <p>© 2026 SmartWorks Inc. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================= -->
+  <!-- モバイル追従CTA（画面下部固定） -->
+  <!-- ============================================= -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-2xl px-3 py-3">
+    <a href="#cta-final" class="flex items-center justify-center w-full py-3.5 bg-orange-500 text-base font-black text-white rounded-lg hover:bg-orange-600 shadow-lg transition">
+      30日間 無料で試してみる
+      <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+
+</body>
+</html>
